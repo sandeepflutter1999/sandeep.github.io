@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Sandeep And Teams — Full Stack Digital Team</title>
-<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+<title>SK Teams — Full Stack Digital Team</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -21,7 +21,7 @@
   --border:rgba(245,200,66,0.15);
 }
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--white);overflow-x:hidden;cursor:none}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--white);overflow-x:hidden;cursor:none}
 
 /* CUSTOM CURSOR */
 .cursor{position:fixed;width:12px;height:12px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9999;transition:transform .15s ease;mix-blend-mode:difference}
@@ -37,8 +37,8 @@ body::before{
 /* NAV */
 nav{position:fixed;top:0;width:100%;z-index:500;padding:18px 60px;display:flex;align-items:center;justify-content:space-between;background:rgba(6,8,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
 .nav-brand{display:flex;align-items:center;gap:10px}
-.nav-logo-box{width:36px;height:36px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#000}
-.nav-name{font-family:'Syne',sans-serif;font-weight:700;font-size:17px;letter-spacing:-.3px}
+.nav-logo-box{width:36px;height:36px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-weight:800;font-size:11px;color:#000}
+.nav-name{font-family:'Outfit',sans-serif;font-weight:800;font-size:15px;letter-spacing:-.3px}
 .nav-name span{color:var(--gold)}
 .nav-links{display:flex;gap:32px;align-items:center}
 .nav-links a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.3px;transition:color .3s;text-transform:uppercase}
@@ -56,12 +56,12 @@ nav{position:fixed;top:0;width:100%;z-index:500;padding:18px 60px;display:flex;a
 .hero-tag::before{content:'';width:7px;height:7px;background:var(--gold);border-radius:50%;animation:blink 2s ease infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 
-.hero h1{font-family:'Syne',sans-serif;font-size:clamp(44px,7vw,90px);font-weight:800;line-height:1;letter-spacing:-3px;margin-bottom:20px;animation:fadeSlideDown 1s ease .1s both}
+.hero h1{font-family:'Outfit',sans-serif;font-size:clamp(44px,7vw,90px);font-weight:800;line-height:1;letter-spacing:-3px;margin-bottom:20px;animation:fadeSlideDown 1s ease .1s both}
 .hero h1 .line1{display:block;color:var(--white)}
 .hero h1 .line2{display:block;background:linear-gradient(135deg,var(--gold) 0%,var(--gold2) 50%,#ff9f43 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 
 .hero-desc{font-size:clamp(14px,1.8vw,18px);color:var(--muted);max-width:620px;line-height:1.75;margin:0 auto 16px;animation:fadeSlideDown 1s ease .2s both}
-.hero-desc-hi{font-size:14px;color:rgba(245,200,66,0.6);margin-bottom:32px;animation:fadeSlideDown 1s ease .3s both;font-style:italic}
+.hero-desc-hi{font-size:15px;color:rgba(245,200,66,0.75);margin-bottom:32px;animation:fadeSlideDown 1s ease .3s both;font-weight:600;letter-spacing:.5px}
 
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:56px;animation:fadeSlideDown 1s ease .4s both}
 .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;padding:13px 30px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;letter-spacing:.3px;transition:all .3s;border:none;cursor:pointer}
@@ -73,7 +73,7 @@ nav{position:fixed;top:0;width:100%;z-index:500;padding:18px 60px;display:flex;a
 .stats-row{display:flex;gap:0;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:rgba(245,200,66,0.03);animation:fadeSlideUp 1s ease .5s both;backdrop-filter:blur(10px)}
 .stat-item{flex:1;padding:22px 28px;text-align:center;border-right:1px solid var(--border);position:relative}
 .stat-item:last-child{border-right:none}
-.stat-num{font-family:'Syne',sans-serif;font-size:32px;font-weight:800;color:var(--gold)}
+.stat-num{font-family:'Outfit',sans-serif;font-size:32px;font-weight:800;color:var(--gold)}
 .stat-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-top:3px}
 
 /* SECTIONS */
@@ -82,7 +82,7 @@ section{padding:100px 0;position:relative;z-index:1}
 .section-head{margin-bottom:60px}
 .section-label{display:inline-block;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;position:relative}
 .section-label::before{content:'//';margin-right:6px;opacity:.5}
-.section-title{font-family:'Syne',sans-serif;font-size:clamp(28px,4vw,48px);font-weight:800;letter-spacing:-1.5px;line-height:1.1}
+.section-title{font-family:'Outfit',sans-serif;font-size:clamp(28px,4vw,48px);font-weight:800;letter-spacing:-1.5px;line-height:1.1}
 .section-title em{font-style:normal;color:var(--gold)}
 .section-sub{color:var(--muted);font-size:15px;margin-top:10px;line-height:1.6}
 
@@ -98,12 +98,12 @@ section{padding:100px 0;position:relative;z-index:1}
 .team-card-accent{position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
 .team-card:hover .team-card-accent{transform:scaleX(1)}
 .tc-header{display:flex;align-items:flex-start;gap:18px;margin-bottom:22px}
-.tc-avatar{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:22px;color:#000;flex-shrink:0}
+.tc-avatar{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-weight:800;font-size:22px;color:#000;flex-shrink:0}
 .tc-avatar.cyan{background:linear-gradient(135deg,var(--cyan),#0099bb)}
 .tc-avatar.green{background:linear-gradient(135deg,var(--green),#00cc7a)}
 .tc-avatar.pink{background:linear-gradient(135deg,var(--pink),#cc003d)}
 .tc-meta{}
-.tc-name{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.5px}
+.tc-name{font-family:'Outfit',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.5px}
 .tc-role{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-top:3px}
 .tc-role.gold{color:var(--gold)}
 .tc-role.cyan{color:var(--cyan)}
@@ -131,7 +131,7 @@ section{padding:100px 0;position:relative;z-index:1}
 .proj-bar{height:2px;border-radius:2px;margin-bottom:16px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transform-origin:left;transition:transform .4s ease}
 .proj-card:hover .proj-bar{transform:scaleX(1)}
 .proj-cat{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;opacity:.8}
-.proj-name{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;margin-bottom:8px}
+.proj-name{font-family:'Outfit',sans-serif;font-size:16px;font-weight:700;margin-bottom:8px}
 .proj-desc{color:var(--muted);font-size:12.5px;line-height:1.65;margin-bottom:14px}
 .proj-pills{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}
 .proj-pill{background:rgba(255,255,255,0.04);color:var(--muted);padding:3px 9px;border-radius:5px;font-size:11px;border:1px solid rgba(255,255,255,0.06)}
@@ -146,7 +146,7 @@ section{padding:100px 0;position:relative;z-index:1}
 .site-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:28px;text-align:center;transition:all .4s;position:relative;overflow:hidden}
 .site-card:hover{transform:translateY(-6px);border-color:rgba(245,200,66,0.4);box-shadow:0 20px 50px rgba(0,0,0,.4)}
 .site-icon{font-size:36px;margin-bottom:14px;display:block}
-.site-name{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:6px}
+.site-name{font-family:'Outfit',sans-serif;font-size:18px;font-weight:700;margin-bottom:6px}
 .site-desc{color:var(--muted);font-size:13px;line-height:1.6;margin-bottom:18px}
 .site-url{display:inline-flex;align-items:center;gap:6px;color:var(--gold);font-size:12px;font-weight:600;text-decoration:none;border:1px solid rgba(245,200,66,0.25);padding:7px 16px;border-radius:7px;transition:all .3s}
 .site-url:hover{background:rgba(245,200,66,0.1)}
@@ -156,12 +156,12 @@ section{padding:100px 0;position:relative;z-index:1}
 .why-card{background:var(--bg2);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:26px;transition:all .35s}
 .why-card:hover{border-color:var(--border);transform:translateY(-4px)}
 .why-icon{font-size:30px;margin-bottom:14px;display:block}
-.why-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;margin-bottom:8px}
+.why-title{font-family:'Outfit',sans-serif;font-size:16px;font-weight:700;margin-bottom:8px}
 .why-desc{color:var(--muted);font-size:13px;line-height:1.65}
 
 /* CONTACT */
 .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-.contact-left h3{font-family:'Syne',sans-serif;font-size:36px;font-weight:800;letter-spacing:-1px;margin-bottom:14px}
+.contact-left h3{font-family:'Outfit',sans-serif;font-size:36px;font-weight:800;letter-spacing:-1px;margin-bottom:14px}
 .contact-left h3 span{color:var(--gold)}
 .contact-left p{color:var(--muted);font-size:15px;line-height:1.75;margin-bottom:28px}
 .contact-left p.hindi{color:rgba(245,200,66,0.5);font-style:italic;font-size:13px;margin-top:-18px;margin-bottom:28px}
@@ -171,19 +171,19 @@ section{padding:100px 0;position:relative;z-index:1}
 .c-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
 .c-val{font-size:14px;font-weight:500}
 .contact-right{background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:36px}
-.contact-right h4{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;margin-bottom:6px}
+.contact-right h4{font-family:'Outfit',sans-serif;font-size:20px;font-weight:700;margin-bottom:6px}
 .contact-right p{color:var(--muted);font-size:13px;margin-bottom:24px}
 .form-group{margin-bottom:16px}
 .form-group label{display:block;font-size:12px;color:var(--muted);font-weight:500;margin-bottom:7px;text-transform:uppercase;letter-spacing:.5px}
 .form-group input,.form-group textarea{width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:9px;padding:12px 16px;color:var(--white);font-family:'DM Sans',sans-serif;font-size:14px;transition:border-color .3s;resize:none}
 .form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--gold)}
 .form-group textarea{height:100px}
-.form-submit{width:100%;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;padding:13px;border-radius:9px;font-size:14px;font-weight:700;border:none;cursor:pointer;letter-spacing:.3px;transition:all .3s;font-family:'DM Sans',sans-serif}
+.form-submit{width:100%;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;padding:13px;border-radius:9px;font-size:14px;font-weight:700;border:none;cursor:pointer;letter-spacing:.3px;transition:all .3s;font-family:'Plus Jakarta Sans',sans-serif}
 .form-submit:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(245,200,66,0.3)}
 
 /* FOOTER */
 footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
-.footer-brand{font-family:'Syne',sans-serif;font-weight:800;font-size:15px}
+.footer-brand{font-family:'Outfit',sans-serif;font-weight:800;font-size:15px}
 .footer-brand span{color:var(--gold)}
 .footer-copy{color:var(--muted);font-size:12px}
 .footer-links{display:flex;gap:20px}
@@ -279,7 +279,7 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
         </div>
       </div>
     </div>
-    <div class="intro-brand">Sandeep <span>And Teams</span></div>
+    <div class="intro-brand">SK <span>Teams</span></div>
     <div class="intro-tagline">Building your next product...</div>
     <div class="intro-progress-wrap">
       <div class="intro-progress-bar" id="introProgress"></div>
@@ -343,12 +343,12 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
 .kb-spacebar span{width:100px;height:8px;background:rgba(245,200,66,0.08);border-radius:2px;border:1px solid rgba(245,200,66,0.1)}
 
 /* BRAND */
-.intro-brand{font-family:'Syne',sans-serif;font-size:28px;font-weight:800;letter-spacing:-1px;margin-top:8px}
+.intro-brand{font-family:'Outfit',sans-serif;font-size:28px;font-weight:800;letter-spacing:-1px;margin-top:8px}
 .intro-brand span{color:var(--gold)}
 .intro-tagline{font-size:13px;color:var(--muted);letter-spacing:.5px}
 .intro-progress-wrap{width:280px;height:3px;background:rgba(255,255,255,0.07);border-radius:3px;overflow:hidden}
 .intro-progress-bar{height:100%;width:0%;background:linear-gradient(90deg,var(--gold),var(--gold2),#ff9f43);border-radius:3px;transition:width .05s linear;box-shadow:0 0 10px rgba(245,200,66,0.5)}
-.intro-percent{font-family:'Syne',sans-serif;font-size:13px;color:var(--gold);font-weight:700}
+.intro-percent{font-family:'Outfit',sans-serif;font-size:13px;color:var(--gold);font-weight:700}
 </style>
 
 <div class="cursor" id="cursor"></div>
@@ -357,8 +357,8 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
 <!-- NAV -->
 <nav>
   <div class="nav-brand">
-    <div class="nav-logo-box">SAT</div>
-    <div class="nav-name">Sandeep <span>And Teams</span></div>
+    <div class="nav-logo-box">SKT</div>
+    <div class="nav-name">SK <span>Teams</span></div>
   </div>
   <div class="nav-links">
     <a href="#team">Team</a>
@@ -402,8 +402,8 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
     <span class="line1">We Build Digital</span>
     <span class="line2">Products That Deliver</span>
   </h1>
-  <p class="hero-desc">A complete team of Flutter developers, backend engineers, SEO specialists & UI designers with 8+ years of combined expertise — building apps, backends & digital brands from Punjab, India.</p>
-  <p class="hero-desc-hi">8+ Years of Experience — We have a complete team of Flutter, Backend, SEO & Design experts</p>
+  <p class="hero-desc">A complete team of Flutter developers, backend engineers, SEO specialists & UI designers — with 8+ years of expertise, building world-class apps and digital products from Punjab, India.</p>
+  <p class="hero-desc-hi">One team. Every skill. Zero compromise.</p>
 
   <div class="hero-btns">
     <a href="#projects" class="btn-gold">Explore Our Work</a>
@@ -442,7 +442,7 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
     <div class="section-head reveal">
       <div class="section-label">Our People</div>
       <h2 class="section-title">Meet The <em>Full Team</em></h2>
-      <p class="section-sub">Specialists in every layer — mobile, backend, SEO & design. Ek complete team — har kaam ke liye expert!</p>
+      <p class="section-sub">Specialists in every layer — mobile, backend, SEO & design. One complete team for every need.</p>
     </div>
     <div class="team-grid">
 
@@ -577,8 +577,8 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
         <div class="proj-desc">Complete food delivery app with live GPS tracking, real-time Firebase notifications & multi-gateway payments. Built & published solo.</div>
         <div class="proj-pills"><span class="proj-pill">Live Tracking</span><span class="proj-pill">Firebase</span><span class="proj-pill">Payments</span></div>
         <div class="proj-links-row">
-          <a class="plink" href="https://play.google.com/store/apps/details?id=com.app.savorupp" target="_blank">▶ Android</a>
-          <a class="plink" href="https://apps.apple.com/in/app/savor-upp/id6738163422" target="_blank"> iOS</a>
+          <a class="plink" href="https://play.google.com/store/apps/details?id=com.app.savorupp" target="_blank" rel="noopener noreferrer">▶ Android</a>
+          <a class="plink" href="https://apps.apple.com/in/app/savor-upp/id6738163422" target="_blank" rel="noopener noreferrer"> iOS</a>
         </div>
       </div>
 
@@ -589,8 +589,8 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
         <div class="proj-desc">Skin analysis AI app with API integration, Firebase cloud services and optimized performance. Published on both platforms.</div>
         <div class="proj-pills"><span class="proj-pill">Healthcare</span><span class="proj-pill">AI API</span><span class="proj-pill">Firebase</span></div>
         <div class="proj-links-row">
-          <a class="plink" href="https://play.google.com/store/apps/details?id=com.deve.melanoscope" target="_blank">▶ Android</a>
-          <a class="plink" href="https://apps.apple.com/in/app/melanoscope/id6738163464" target="_blank"> iOS</a>
+          <a class="plink" href="https://play.google.com/store/apps/details?id=com.deve.melanoscope" target="_blank" rel="noopener noreferrer">▶ Android</a>
+          <a class="plink" href="https://apps.apple.com/in/app/melanoscope/id6738163464" target="_blank" rel="noopener noreferrer"> iOS</a>
         </div>
       </div>
 
@@ -601,8 +601,8 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
         <div class="proj-desc">Event & ticket booking app with QR scanning, Stripe payments and live push notifications — client + lawyer apps.</div>
         <div class="proj-pills"><span class="proj-pill">QR Scanning</span><span class="proj-pill">Payments</span><span class="proj-pill">Legal</span></div>
         <div class="proj-links-row">
-          <a class="plink" href="https://play.google.com/store/apps/details?id=com.cleanslate.user.dev" target="_blank">▶ Android</a>
-          <a class="plink" href="https://apps.apple.com/in/app/the-ticket-guys-for-client/id6739700153" target="_blank"> iOS</a>
+          <a class="plink" href="https://play.google.com/store/apps/details?id=com.cleanslate.user.dev" target="_blank" rel="noopener noreferrer">▶ Android</a>
+          <a class="plink" href="https://apps.apple.com/in/app/the-ticket-guys-for-client/id6739700153" target="_blank" rel="noopener noreferrer"> iOS</a>
         </div>
       </div>
 
@@ -613,8 +613,8 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
         <div class="proj-desc">Vegan community app with interest-based matching, nearby events, vegan places discovery and real-time group chat.</div>
         <div class="proj-pills"><span class="proj-pill">Real-time Chat</span><span class="proj-pill">Location</span><span class="proj-pill">Community</span></div>
         <div class="proj-links-row">
-          <a class="plink" href="https://play.google.com/store/apps/details?id=com.app.vgn_social" target="_blank">▶ Android</a>
-          <a class="plink web" href="https://vgn.me/" target="_blank">🌐 Website</a>
+          <a class="plink" href="https://play.google.com/store/apps/details?id=com.app.vgn_social" target="_blank" rel="noopener noreferrer">▶ Android</a>
+          <a class="plink web" href="https://vgn.me/" target="_blank" rel="noopener noreferrer">🌐 Website</a>
         </div>
       </div>
 
@@ -647,7 +647,7 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
         <div class="proj-desc">Media utility app with modern UI, API-driven content and optimized performance — published on iOS independently.</div>
         <div class="proj-pills"><span class="proj-pill">Modern UI</span><span class="proj-pill">API Integration</span></div>
         <div class="proj-links-row">
-          <a class="plink" href="https://apps.apple.com/in/app/clipa/id6740476941" target="_blank"> iOS</a>
+          <a class="plink" href="https://apps.apple.com/in/app/clipa/id6740476941" target="_blank" rel="noopener noreferrer"> iOS</a>
         </div>
       </div>
 
@@ -764,28 +764,20 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
       <div class="contact-left reveal-left">
         <div class="section-label">Let's Build</div>
         <h3>Ready to Start <span>Your Project?</span></h3>
-        <p>We're a complete team ready to take your idea from concept to a live, production-grade product. Apps, backends, websites, SEO — we do it all.</p>
-        <p class="hindi">Aapka project shuru karne ke liye humari poori team tayaar hai — Mobile App ho, Website ho ya SEO — sab kuch ek jagah milega!</p>
+        <p>We're a complete team ready to take your idea from concept to a live, production-grade product. Apps, backends, websites, SEO — we do it all. Get in touch and we'll respond within 24 hours.</p>
         <div class="contact-items">
-          <div class="c-item">
-            <div class="c-icon">🌐</div>
-            <div>
-              <div class="c-label">Website</div>
-              <div class="c-val">softdeviser.com</div>
-            </div>
-          </div>
           <div class="c-item">
             <div class="c-icon">📞</div>
             <div>
-              <div class="c-label">Phone</div>
-              <div class="c-val">+91 6283066197</div>
+              <div class="c-label">WhatsApp / Phone</div>
+              <div class="c-val"><a href="https://wa.me/916283066197" target="_blank" rel="noopener" style="color:var(--white);text-decoration:none">+91 6283066197</a></div>
             </div>
           </div>
           <div class="c-item">
             <div class="c-icon">📧</div>
             <div>
               <div class="c-label">Email</div>
-              <div class="c-val">sk8559394@gmail.com</div>
+              <div class="c-val"><a href="mailto:sk8559394@gmail.com" style="color:var(--white);text-decoration:none">sk8559394@gmail.com</a></div>
             </div>
           </div>
           <div class="c-item">
@@ -799,24 +791,27 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
       </div>
       <div class="contact-right reveal-right">
         <h4>Send Us a Message</h4>
-        <p>Tell us about your project and we'll get back within 24 hours.</p>
+        <p>Fill the form below — we'll reach out within 24 hours.</p>
         <div class="form-group">
           <label>Your Name</label>
-          <input type="text" placeholder="Aapka naam..."/>
+          <input type="text" id="f-name" placeholder="Enter your full name..."/>
         </div>
         <div class="form-group">
           <label>Email / Phone</label>
-          <input type="text" placeholder="Email ya phone number..."/>
+          <input type="text" id="f-contact" placeholder="Your email or phone number..."/>
         </div>
         <div class="form-group">
           <label>Project Type</label>
-          <input type="text" placeholder="Flutter App / Backend / SEO / Website..."/>
+          <input type="text" id="f-type" placeholder="Flutter App / Backend / SEO / Website..."/>
         </div>
         <div class="form-group">
           <label>Message</label>
-          <textarea placeholder="Apna project describe karein..."></textarea>
+          <textarea id="f-msg" placeholder="Describe your project requirements..."></textarea>
         </div>
-        <button class="form-submit" onclick="alert('Message sent! We will contact you soon. ✅')">Send Message →</button>
+        <button class="form-submit" id="sendBtn">Send via WhatsApp →</button>
+        <p style="font-size:11px;color:var(--muted);margin-top:10px;text-align:center">
+          Or email directly: <a href="mailto:sk8559394@gmail.com" style="color:var(--gold)">sk8559394@gmail.com</a>
+        </p>
       </div>
     </div>
   </div>
@@ -824,12 +819,12 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-brand">Sandeep <span>And Teams</span></div>
-  <div class="footer-copy">© 2025 Sandeep And Teams · Punjab, India · All Rights Reserved</div>
+  <div class="footer-brand">SK <span>Teams</span></div>
+  <div class="footer-copy">© 2025 SK Teams · Punjab, India · All Rights Reserved</div>
   <div class="footer-links">
-    <a href="https://softdeviser.com/" target="_blank">Website</a>
-    <a href="https://vgn.me/" target="_blank">VGN</a>
-    <a href="https://mistribaba.com/" target="_blank">Mistri Baba</a>
+    <a href="https://softdeviser.com/" target="_blank" rel="noopener noreferrer">Website</a>
+    <a href="https://vgn.me/" target="_blank" rel="noopener noreferrer">VGN</a>
+    <a href="https://mistribaba.com/" target="_blank" rel="noopener noreferrer">Mistri Baba</a>
   </div>
 </footer>
 
@@ -902,6 +897,18 @@ const statsObs = new IntersectionObserver(entries=>{
 },{threshold:.5});
 const statsEl=document.querySelector('.stats-row');
 if(statsEl)statsObs.observe(statsEl);
+
+// WhatsApp Form Send
+document.getElementById('sendBtn').addEventListener('click',()=>{
+  const name = document.getElementById('f-name').value.trim();
+  const contact = document.getElementById('f-contact').value.trim();
+  const type = document.getElementById('f-type').value.trim();
+  const msg = document.getElementById('f-msg').value.trim();
+  if(!name||!msg){alert('Please enter your name and message.');return;}
+  const text = `*New Project Inquiry — SK Teams*\n\n👤 *Name:* ${name}\n📞 *Contact:* ${contact||'Not provided'}\n📁 *Project Type:* ${type||'Not specified'}\n\n💬 *Message:*\n${msg}`;
+  const url = `https://wa.me/916283066197?text=${encodeURIComponent(text)}`;
+  window.open(url,'_blank');
+});
 
 // Stagger cards
 document.querySelectorAll('.team-card').forEach((el,i)=>el.style.transitionDelay=(i*.1)+'s');
