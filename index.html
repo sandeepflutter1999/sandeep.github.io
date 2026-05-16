@@ -21,11 +21,9 @@
   --border:rgba(245,200,66,0.15);
 }
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--white);overflow-x:hidden;cursor:none}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--white);overflow-x:hidden}
 
-/* CUSTOM CURSOR */
-.cursor{position:fixed;width:12px;height:12px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9999;transition:transform .15s ease;mix-blend-mode:difference}
-.cursor-ring{position:fixed;width:40px;height:40px;border:1.5px solid var(--gold);border-radius:50%;pointer-events:none;z-index:9998;transition:all .12s ease;mix-blend-mode:difference}
+
 
 /* NOISE OVERLAY */
 body::before{
@@ -354,8 +352,6 @@ footer{border-top:1px solid var(--border);padding:36px 60px;display:flex;align-i
 .intro-percent{font-family:'Outfit',sans-serif;font-size:13px;color:var(--gold);font-weight:700}
 </style>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
 
 <!-- NAV -->
 <nav>
@@ -851,28 +847,6 @@ const iv = setInterval(()=>{
     }, 400);
   }
 },40);
-
-// Custom cursor
-const cursor = document.getElementById('cursor');
-const cursorRing = document.getElementById('cursorRing');
-let cx=0,cy=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{
-  cx=e.clientX; cy=e.clientY;
-  cursor.style.left=(cx-6)+'px';
-  cursor.style.top=(cy-6)+'px';
-});
-function animateCursorRing(){
-  rx+=(cx-rx)*.12;
-  ry+=(cy-ry)*.12;
-  cursorRing.style.left=(rx-20)+'px';
-  cursorRing.style.top=(ry-20)+'px';
-  requestAnimationFrame(animateCursorRing);
-}
-animateCursorRing();
-document.querySelectorAll('a,button,.team-card,.proj-card,.site-card,.why-card').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{cursor.style.transform='scale(2)';cursorRing.style.transform='scale(1.5)';});
-  el.addEventListener('mouseleave',()=>{cursor.style.transform='scale(1)';cursorRing.style.transform='scale(1)';});
-});
 
 // Scroll reveal
 const obs = new IntersectionObserver(entries=>{
